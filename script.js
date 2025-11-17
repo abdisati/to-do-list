@@ -4,3 +4,20 @@ const addBtn=document.getElementById("add-btn");
 const taskList=document.getElementById("task-list");
 //get the tasks from local storage, i.e the browser
 const tasks=JSON.parse(localStorage.getItem("tasks"))  || [];
+//function to save the local storage
+function saveTask(){
+    localStorage.setItem("tasks",JSON.stringify(tasks)); //convert it to string, cause the value
+                                                        //val type for localStorage is string
+
+}
+
+function renderTasks(){
+    taskList.innerHTML=""; //set the inner html to empty string
+    //apply forEach function to each tasks
+    tasks.forEach((task,index)=>{
+        //create a list element
+        const li=document.createElement("li");
+        //assign a class name 
+        
+    })
+}
