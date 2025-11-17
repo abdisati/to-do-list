@@ -41,3 +41,42 @@ h1{
   border-radius: 5px;
   cursor: pointer;
 }
+
+#add-btn:hover {
+    background-color: #142a14;
+}
+
+#task-list{
+    margin-top: 20px;
+    list-style: circle;
+}
+
+/*this is to be added after js*/
+
+.task {
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delete-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: red;
+}
