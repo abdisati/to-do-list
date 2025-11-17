@@ -18,6 +18,10 @@ function renderTasks(){
         //create a list element
         const li=document.createElement("li");
         //assign a class name 
-        
+        li.className=`task ${task.completed?"completed":""}`;
+        li.innerHTML=`<span onclick=toggle(${index})>${task.text}</span>
+        <button class=delete-btn onclick="deleteTask(${index})">Delete</button>
+        `;
+
     })
 }
