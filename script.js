@@ -26,5 +26,17 @@ function renderTasks(){
         //append the created element to the taskList
         taskList.appendChild(li);
 
-    })
+    });
+}
+
+//function to add the task
+function addTask(){
+    let text=input.value.trim();
+    if(text==""){
+        alert("Please Enter The Task");
+        return;
+    }
+    tasks.push({text,complet:false});
+    saveTask();
+    renderTasks();
 }
