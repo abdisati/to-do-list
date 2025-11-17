@@ -49,5 +49,12 @@ function toggle(index){
     saveTask();
     renderTasks();
 }
+function deleteTask(index){
+    tasks.splice(index,1);
+    saveTask();
+    renderTasks;
+}
+
+
 
 
