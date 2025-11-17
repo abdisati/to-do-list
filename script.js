@@ -39,4 +39,15 @@ function addTask(){
     tasks.push({text,complet:false});
     saveTask();
     renderTasks();
+
+    //reset the iput val
+    input.value="";
 }
+
+function toggle(index){
+    tasks[index].completed=!tasks[index].completed;
+    saveTask();
+    renderTasks();
+}
+
+
