@@ -55,6 +55,12 @@ function deleteTask(index){
     renderTasks;
 }
 
+//add event listner to button and input
+addBtn.addEventListener("click",addTask);
+input.addEventListener("keypress",(e)=>{
+    if(e.key=='Eneter') addTask();
+});
+
 
 
 
