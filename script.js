@@ -42,6 +42,7 @@ function addTask(){
 
     //reset the iput val
     input.value="";
+
 }
 
 function toggle(index){
@@ -52,7 +53,7 @@ function toggle(index){
 function deleteTask(index){
     tasks.splice(index,1);
     saveTask();
-    renderTasks;
+    renderTasks();
 }
 
 //add event listner to button and input
